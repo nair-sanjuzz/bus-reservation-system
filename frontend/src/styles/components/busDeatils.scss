@@ -1,0 +1,83 @@
+@import '../base/variables';
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.seat-detail {
+    display: flex;
+    justify-content: space-around;
+}
+
+.seat-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 15px;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    .seat {
+        width: 55px;
+        height: 55px;
+        border: none;
+        color: $text-color;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: $border-radius;
+
+        &.available {
+            background-color: #b7b7b7;
+        }
+
+        &.selected {
+            background-color: green;
+        }
+
+        &.booked {
+            background-color: red;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.passenger-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    width: 25%;
+
+    input {
+        width: 90%;
+        padding: 8px;
+        margin: 10px;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+        }
+    }
+}
+
+.book-button {
+    padding: 12px 20px;
+    background-color: $primary-color;
+    color: $text-color;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: $border-radius;
+    transition: background 0.3s;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}

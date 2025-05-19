@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Union Travels</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #preloader {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(0, 102, 212);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            font-weight: bold;
+            transition: opacity 2s linear 0.8s, height 2s linear 0.8s;
+            overflow: hidden;
+        }
+
+        #preloader img {
+            border: 4px solid black;
+            padding: 5px;
+            margin: 15px;
+            border-radius: 50%;
+            height: 160px;
+            width: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader"><img src="%PUBLIC_URL%/favicon.ico" alt="Loading">Union Travels</div>
+    <div id="root"></div> <!-- React App Loads Here -->
+</body>
+
+</html>

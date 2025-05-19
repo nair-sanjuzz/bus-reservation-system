@@ -1,0 +1,17 @@
+[
+    {"id": 1, "name": "Luxury Bus", "source": "Patan", "destination": "Ahmedabad", "seats": 20, "fare": 179, "time":"15:00", "bookings": {}},
+    {"id": 2, "name": "Express Bus", "source": "Patan", "destination": "Mehsana", "seats": 20, "fare": 65, "time":"18:15", "bookings": {}},
+    {"id": 3, "name": "Luxury Bus", "source": "Ahmedabad", "destination": "Surat", "seats": 20, "fare": 259, "time":"21:00", "bookings": {}},
+    {"id": 4, "name": "Luxury Bus", "source": "Ahmedabad", "destination": "Vadodara", "seats": 20, "fare": 170, "time":"21:30", "bookings": {}},
+    {"id": 5, "name": "Luxury Bus", "source": "Ahmedabad", "destination": "Bhuj", "seats": 20, "fare": 450, "time":"23:50", "bookings": {}},
+    {"id": 6, "name": "Express Bus", "source": "Ahmedabad", "destination": "Rajkot", "seats": 20, "fare": 190, "time":"08:00", "bookings": {}},
+    {"id": 7, "name": "Luxury Bus", "source": "Vadodara", "destination": "Surat", "seats": 20, "fare": 300, "time":"20:00", "bookings": {}},
+    {"id": 8, "name": "Express Bus", "source": "Vadodara", "destination": "Rajkot", "seats": 20, "fare": 250, "time":"8:25", "bookings": {}},
+    {"id": 9, "name": "Express Bus", "source": "Vadodara", "destination": "Surat", "seats": 20, "fare": 160, "time":"10:00", "bookings": {}},
+    {"id": 10, "name": "Luxury Bus", "source": "Vadodara", "destination": "Patan", "seats": 20, "fare": 249, "time":"8:00", "bookings": {}},
+    {"id": 11, "name": "Express Bus", "source": "Vadodara", "destination": "Ahmedabad", "seats": 20, "fare": 135, "time":"21:15", "bookings": {}},
+    {"id": 12, "name": "Express Bus", "source": "Patan", "destination": "Bhuj", "seats": 20, "fare": 310, "time":"09:15", "bookings": {}},
+    {"id": 13, "name": "Express Bus", "source": "Ahmedabad", "destination": "Gandhidham", "seats": 20, "fare": 389, "time":"16:30", "bookings": {}},
+    {"id": 14, "name": "Express Bus", "source": "Gandhidham", "destination": "Rajkot", "seats": 20, "fare": 180, "time":"09:45", "bookings": {}},
+    {"id": 15, "name": "Express Bus", "source": "Gandhidham", "destination": "Patan", "seats": 20, "fare": 245, "time":"09:20", "bookings": {}}
+]
