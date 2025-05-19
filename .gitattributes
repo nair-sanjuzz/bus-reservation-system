@@ -1,0 +1,14 @@
+# Ignore frontend build artifacts
+/frontend/build/* linguist-vendored
+/frontend/node_modules/* linguist-vendored
+/frontend/public/* linguist-vendored
+/frontend/*.min.js linguist-vendored
+/frontend/*.min.css linguist-vendored
+
+# Ignore backend cache and environment files
+/backend/__pycache__/* linguist-vendored
+/backend/venv/* linguist-vendored
+
+# Treat frontend and backend folders as source code
+/frontend/* linguist-detectable=true
+/backend/* linguist-detectable=true
