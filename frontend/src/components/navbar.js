@@ -3,8 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import logo from './bus-logo.png';
 import '../styles/main.scss';
 
-function Navbar() {
-    const navigate = useNavigate();k
+function Navbar({ isLoggedIn, setIsLoggedIn }) {
+    const navigate = useNavigate();
 
     const handleLogout = () => {
         sessionStorage.removeItem("admin");
