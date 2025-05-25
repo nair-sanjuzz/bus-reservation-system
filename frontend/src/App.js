@@ -25,7 +25,7 @@ function App() {
     return (
         <div className="app-container">
             <Router>
-                <NavBar />
+                <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
                 <div className="content-wrap">
                     <Routes>
                         <Route path="/" element={<HomePage />} />

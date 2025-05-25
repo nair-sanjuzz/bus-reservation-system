@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from './bus-logo.png';
 import '../styles/main.scss';
 
 function Navbar() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        const adminSession = sessionStorage.getItem("admin");
-        setIsLoggedIn(!!adminSession);
-    }, []);
+    const navigate = useNavigate();k
 
     const handleLogout = () => {
         sessionStorage.removeItem("admin");
