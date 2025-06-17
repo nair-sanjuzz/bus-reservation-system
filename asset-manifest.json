@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bus-reservation-system/static/css/main.7f9c2dbc.css",
-    "main.js": "/bus-reservation-system/static/js/main.c41d4e1c.js",
+    "main.js": "/bus-reservation-system/static/js/main.08c32803.js",
     "static/media/bg.jpg": "/bus-reservation-system/static/media/bg.bc625271b8a2e5044e0d.jpg",
     "static/media/bus-logo.png": "/bus-reservation-system/static/media/bus-logo.2a8179fb690698dd8100.png",
     "index.html": "/bus-reservation-system/index.html",
     "main.7f9c2dbc.css.map": "/bus-reservation-system/static/css/main.7f9c2dbc.css.map",
-    "main.c41d4e1c.js.map": "/bus-reservation-system/static/js/main.c41d4e1c.js.map"
+    "main.08c32803.js.map": "/bus-reservation-system/static/js/main.08c32803.js.map"
   },
   "entrypoints": [
     "static/css/main.7f9c2dbc.css",
-    "static/js/main.c41d4e1c.js"
+    "static/js/main.08c32803.js"
   ]
 }
