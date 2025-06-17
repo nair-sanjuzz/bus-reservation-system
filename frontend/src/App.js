@@ -24,7 +24,7 @@ function App() {
 
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename="/bus-reservation-system">
                 <div className="app-container">
                     <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
                     <div className="content-wrap">
