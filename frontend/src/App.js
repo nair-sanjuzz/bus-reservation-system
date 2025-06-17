@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/navbar';
 import Foot from './components/foot';
 import HomePage from './pages/HomePage';
@@ -23,25 +23,27 @@ function App() {
     }, []);
 
     return (
-        <div className="app-container">
-            <Router>
-                <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-                <div className="content-wrap">
-                    <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/bus/:busId" element={<BusDetailsPage />} />
-                        <Route path="/ticket-cancel" element={<CancelTicket />} />
-                        <Route path="/generate-ticket" element={<GenerateTicket />} />
-                        <Route path="/admin" element={<AdminPage />} />
-                        <Route path="/admin/add-bus" element={<AddBus />} />
-                        <Route path="/admin/delete-bus" element={<DeleteBus />} />
-                        <Route path="/admin/update-bus" element={<UpdateBus />} />
-                        <Route path="/admin/bookings" element={<BookingList />} />
-                    </Routes>
+        <>
+            <BrowserRouter>
+                <div className="app-container">
+                    <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+                    <div className="content-wrap">
+                        <Routes>
+                            <Route path="/" element={<HomePage />} />
+                            <Route path="/bus/:busId" element={<BusDetailsPage />} />
+                            <Route path="/ticket-cancel" element={<CancelTicket />} />
+                            <Route path="/generate-ticket" element={<GenerateTicket />} />
+                            <Route path="/admin" element={<AdminPage />} />
+                            <Route path="/admin/add-bus" element={<AddBus />} />
+                            <Route path="/admin/delete-bus" element={<DeleteBus />} />
+                            <Route path="/admin/update-bus" element={<UpdateBus />} />
+                            <Route path="/admin/bookings" element={<BookingList />} />
+                        </Routes>
+                    </div>
+                    <Foot />
                 </div>
-                <Foot />
-            </Router>
-        </div>
+            </BrowserRouter>
+        </>
     );
 }
 
